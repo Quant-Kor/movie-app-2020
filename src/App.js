@@ -25,8 +25,7 @@ class App extends React.Component {
           </div>
         ) : (
           <div className ="movies">
-            {movies.map(movie => {
-              return(
+            {movies.map(movie => (
                 <Movie
                 key = {movie.id}
                 id = {movie.id}
@@ -35,8 +34,8 @@ class App extends React.Component {
                 summary = {movie.summary}
                 poster = {movie.medium_cover_image}
                 genres = {movie.genres} /> 
-              )
-            })}
+              
+              ))}
             </div>
         )}
         </section>
